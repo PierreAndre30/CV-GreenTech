@@ -1,0 +1,206 @@
+@import
+ url('https://fonts.google.com/share?selection.family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900');
+    
+@import  
+ url('https://fonts.google.com/share?selection.family=Raleway:ital,wght@0,100..900;1,100..900');
+
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background: rgb(255,255,255);
+  font-family: raleway, sans-serif;
+  color: rgb(51,51,51);
+  line-height: 1.55;}
+
+.wrap {
+  max-width: 1160px;
+  margin: 0 auto;
+  background: rgb(255,255,255);}
+
+/* ====== Header ====== */
+.header {
+  font-family: lato, sans-serif;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-items: center;
+  gap: 24px;
+  padding: 28px 28px 24px;
+  background: rgb(23,171,179);
+  color: rgb(255,255,255);}
+
+.header .photo {
+  display: flex;
+  justify-content: center;}
+
+.header .photo img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255,255,255);}
+
+.header h1 {
+  position:center;
+  margin: 0 0 6px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: .5px;}
+
+.header h1 span { font-weight: 700; }
+
+.header .titre {
+  margin: 0 0 10px;
+  font-weight: 600;}
+
+.contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 24px;
+  align-items: center;
+  font-weight: 500;}
+
+.contact .ico {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;}
+
+/* ====== Sidebar ====== */
+.content {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  padding: 18px 24px 32px;}
+
+.sidebar h3 {
+  color: rgb(23,171,179);
+  margin: 14px 0 8px;
+  font-size: 16px;
+  letter-spacing: .3px;
+  border-bottom: 1px solid rgb(245,245,245);}
+
+.sidebar {background-color: rgb(227,227,227);} 
+  
+.sidebar section + section { margin-top: 14px;}
+
+.sidebar ul { margin: 0; padding: 0; list-style: none;}
+
+
+.skills li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 8px 0;}
+
+.skills li:last-child { border-bottom: 0; }
+
+.stars {
+  --fill: 4;
+  letter-spacing: 2px;
+  font-size: 14px;
+  background: linear-gradient(90deg,rgb(23,171,179) calc(var(--fill)/5*100%),rgb(245,245,245) calc(var(--fill)/5*100%));
+  background-clip: text;
+  color: transparent;}
+
+
+.langue li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  padding: 6px 0;}
+
+.langue li span { color: grey; font-size: 13px; }
+
+.langue li:last-child { border-bottom: 0; }
+
+
+.other { margin-top: 6px; }
+
+.other li {
+  position: relative;
+  padding-left: 18px;
+  margin: 6px 0;}
+
+.other li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1.2;
+  color: rgb(23,171,179);}
+
+
+/* ====== Main ====== */
+
+.main section + section { margin-top: 18px; }
+
+.main h2 {
+  color: rgb(23,171,179);
+  font-size: 18px;
+  margin: 12px 0 8px;
+  border-bottom: 1px solid rgb(227,227,227);}
+
+.main p { margin: 0 0 10px; }
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 160px;
+  gap: 16px;
+  padding: 12px 0;}
+
+.item:hover{
+  background-color: rgb(245,245,245);
+  transition: color 0.25s;
+  border-left-style: solid ;
+  border-color: rgb(23,171,179)}  
+
+.item:last-child { border-bottom: 0; }
+
+.item .txt h4 {
+  margin: 0 0 2px;
+  font-size: 15px;}
+
+.item .txt .sub {
+  font-size: 12px;
+  color: grey;}
+
+.item .date {
+  text-align: right;
+  font-size: 12px;
+  color: rgb(23,171,179);
+  white-space: nowrap;}
+
+
+/* ====== Footer ====== */
+.footer {
+  background: rgb(23,171,179);
+  color: rgb(255,255,255);
+  padding: 12px 24px 18px;
+  text-align: center;}
+
+.footer .socials {
+  list-style: none;
+  padding: 0;
+  margin: 4px auto 8px;
+  display: inline-flex;
+  gap: 14px;}
+
+.footer .socials a {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 3px;
+  background: rgba(255,255,255,);
+  text-decoration: none;
+  font-weight: 700;
+  color:rgb(255,255,255);}
+
+.socials:hover{ opacity: 0.9;}
+
+.footer .maj {font-size: 12px;}
+
